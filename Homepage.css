@@ -1,0 +1,141 @@
+body {
+    background: #F0F0F0;
+}
+
+.container {
+    max-width: 840px;
+    height: 623px;
+    border-radius: 24px 24px 176px 24px;
+    background: #FFF;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-texts {
+    display: flex;
+    padding: 56px 0px 10px 56px;
+}
+
+.sub-texts .days-text {
+    margin-right: 140px;
+}
+
+.sub-texts .months-text {
+    margin-right: 109px;
+}
+
+.sub-texts div {
+    color: #716F6F;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+}
+
+.retangle input {
+    padding: 0px;
+    width: 140px;
+    height: 70px;
+    border-radius: 8px;
+    border: 1px solid #DBDBDB;
+    background: #FFF;
+    flex-shrink: 0;
+    color: #716F6F;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    padding: 0px 0px 0px 16px;
+}
+
+.retangle input:focus {
+    border: 1px solid #854DFF;
+}
+
+.input-retangles {
+    padding: 10px 272px 48px 56px;
+    gap: 16px;
+    display: flex;
+    /* margin-top: 10px;
+    margin-left: 56px; */
+}
+
+hr {
+    width: 632px;
+    height: 1px;
+    color: #DBDBDB;
+    margin: 0px;
+    margin-left: 56px;
+    background: #DBDBDB;
+}
+
+.button {
+    display: flex;
+    left: 56px;
+    position: relative;
+}
+.line{
+    padding: 36px;
+}
+
+.btn {
+    border-radius: 9999px;
+    background: #854DFF;
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+}
+
+.button img {
+    width: 46px;
+    height: 44px;
+}
+.content{
+    padding: 33px 56px;
+    position: absolute;
+}
+.years {
+    display: flex;
+    gap: 19px;
+    /* padding: 33px 56px 0px; */
+}
+
+.dash {
+    color: #854DFF;
+    font-family: Poppins;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.6px;
+}
+
+.title {
+    color: #141414;
+    font-family: Poppins;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105.6px;
+}
+
+.months {
+    display: flex;
+    gap: 19px;
+}
+
+.days {
+    display: flex;
+    gap: 19px;
+}
