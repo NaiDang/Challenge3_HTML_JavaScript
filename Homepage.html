@@ -11,42 +11,36 @@
 </head>
 <body>
     <div class="container">
-        <div class="sub-texts">
-            <div class="days-text">Day</div>
-            <div class="months-text">Month</div>
-            <div class="years-text">Year</div>
-        </div>
-        <div class="input-retangles">
-            <div class="retangle">
-                <input type="number" placeholder="DD">
+        <div class="input-flex">
+            <div class="input-container">
+              <div>Day</div>
+              <input type="number"  id="day">
+              <small class="error-day"></small>
             </div>
-            <div class="retangle">
-                <input type="number" placeholder="MM">
+            <div class="input-container">
+              <div>Month</div>
+              <input type="number"  id="month">
+              <small class="error-month"></small>
             </div>
-            <div class="retangle">
-                <input type="number" placeholder="YYYY">
+            <div class="input-container">
+              <div>Year</div>
+              <input type="number"  id="year">
+              <small class="error-year"></small>
             </div>
-        </div>      
+          </div>      
         <div class="button">
             <div class="line"><hr></div>
-            <div class="btn">
-                <img src="./Image/Button-icon.svg" alt="">
-            </div>
+            <button class="submit-btn">
+                <img src="./Image/Button-icon.svg" alt="" >
+            </button>
         </div> 
-        <div class="content">
-            <div class="years">
-                <div class="dash">--</div>
-                <div class="title">years</div>
-            </div>
-            <div class="months">
-                <div class="dash">--</div>
-                <div class="title">months</div>
-            </div>
-            <div class="days">
-                <div class="dash">--</div>
-                <div class="title" >days</div>
-            </div>
+        <div class="output">
+            <div><span class="output-year">--</span>years</div>
+            <div><span class="output-month">--</span>months</div>
+            <div><span class="output-day">--</span>days</div>
+          </div>
         </div>
     </div>
+    <script src="./Script.js"></script>
 </body>
 </html>

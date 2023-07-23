@@ -1,7 +1,7 @@
 body {
     background: #F0F0F0;
 }
-
+/* Desktop page */
 .container {
     max-width: 840px;
     height: 623px;
@@ -11,21 +11,12 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-.sub-texts {
+.input-flex{
     display: flex;
-    padding: 56px 0px 10px 56px;
+    gap:16px ;
+    padding: 56px 0px 0px 56px;
 }
-
-.sub-texts .days-text {
-    margin-right: 140px;
-}
-
-.sub-texts .months-text {
-    margin-right: 109px;
-}
-
-.sub-texts div {
+.input-container div{
     color: #716F6F;
     font-family: Poppins;
     font-size: 14px;
@@ -35,8 +26,12 @@ body {
     letter-spacing: 2.1px;
     text-transform: uppercase;
 }
-
-.retangle input {
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-container input {
     padding: 0px;
     width: 140px;
     height: 70px;
@@ -54,65 +49,61 @@ body {
     text-transform: uppercase;
     padding: 0px 0px 0px 16px;
 }
-
-.retangle input:focus {
-    border: 1px solid #854DFF;
-}
-
+/* .input:focus {
+    border: 2px solid var(--Purple);
+  } */
+  small {
+    color: red;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    position: absolute;
+    margin-top: 105px;
+  }
 .input-retangles {
-    padding: 10px 272px 48px 56px;
+    padding: 0px 272px 48px 56px;
     gap: 16px;
     display: flex;
-    /* margin-top: 10px;
-    margin-left: 56px; */
 }
-
+input:focus {
+    border: 2px solid var(--Purple);
+}
+  
 hr {
     width: 632px;
-    height: 1px;
-    color: #DBDBDB;
     margin: 0px;
     margin-left: 56px;
-    background: #DBDBDB;
+    margin-top: 48px;
+    border: 1x solid #DBDBDB
 }
 
 .button {
     display: flex;
-    left: 56px;
-    position: relative;
-}
-.line{
-    padding: 36px;
+    margin-bottom: -15px;
 }
 
-.btn {
+.submit-btn {
     border-radius: 9999px;
     background: #854DFF;
-    width: 96px;
-    height: 96px;
     flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    
+    border: none; 
 }
-
+.submit-btn:hover {
+    background-color: black;
+  }
 .button img {
     width: 46px;
     height: 44px;
-}
-.content{
-    padding: 33px 56px;
-    position: absolute;
-}
-.years {
-    display: flex;
-    gap: 19px;
-    /* padding: 33px 56px 0px; */
+    padding: 26px 22px;
 }
 
-.dash {
+.output{
+    padding: 0px 56px;
+}
+
+.output span {
     color: #854DFF;
     font-family: Poppins;
     font-size: 96px;
@@ -121,7 +112,7 @@ hr {
     line-height: 105.6px;
 }
 
-.title {
+.output div {
     color: #141414;
     font-family: Poppins;
     font-size: 96px;
@@ -129,13 +120,44 @@ hr {
     font-weight: 700;
     line-height: 105.6px;
 }
+    
+/* Close desktop page */
 
-.months {
-    display: flex;
-    gap: 19px;
-}
+/* Mobile page */
+@media (max-width: 768px) { 
+    .container{
+        width: 368px;
+    }
+    hr{
+        width: 256px;
+    }
+    .input-flex{
+        padding: 52px 0px 0px 24px;
+    }
+    .input-container input{
+        width: 96px;
+        height: 54px;
+    }
+    .output{
+        padding: 56px 0px 0px 24px;
+    }
+    .output span{
+        font-size: 52px;
+    }
+    .sub-texts{
+        width: 100%;
+    }
+    .input-retangles{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+    .months{
+        width: 100%;
+    }
 
-.days {
-    display: flex;
-    gap: 19px;
 }
