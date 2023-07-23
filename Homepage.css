@@ -41,7 +41,7 @@ body {
     flex-shrink: 0;
     color: #716F6F;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
@@ -62,15 +62,10 @@ body {
     position: absolute;
     margin-top: 105px;
   }
-.input-retangles {
-    padding: 0px 272px 48px 56px;
-    gap: 16px;
-    display: flex;
-}
-input:focus {
+/* input:focus {
     border: 2px solid var(--Purple);
 }
-  
+   */
 hr {
     width: 632px;
     margin: 0px;
@@ -78,7 +73,9 @@ hr {
     margin-top: 48px;
     border: 1x solid #DBDBDB
 }
-
+.button .line hr {
+        background-color: #DBDBDB;
+}
 .button {
     display: flex;
     margin-bottom: -15px;
@@ -110,8 +107,12 @@ hr {
     font-style: normal;
     font-weight: 400;
     line-height: 105.6px;
+    margin-right: 19px;
+    
 }
-
+ .increase-font-weight .output span {
+    font-weight: 700;
+  }
 .output div {
     color: #141414;
     font-family: Poppins;
