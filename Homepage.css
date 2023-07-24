@@ -5,12 +5,14 @@ body {
 /* Desktop page */
 .container {
     max-width: 840px;
-    height: 623px;
     border-radius: 24px 24px 176px 24px;
     background: #FFF;
-    margin-top: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 200px auto 20px auto;
+
+}
+
+.content {
+    padding: 56px 56px 70px;
 }
 
 .input-flex {
@@ -34,12 +36,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 160px;
 }
 
 .input-container input {
     padding: 0px;
-    width: 142px;
-    height: 68px;
     border-radius: 8px;
     border: 1px solid #DBDBDB;
     background: #FFF;
@@ -52,29 +53,18 @@ body {
     line-height: 20px;
     letter-spacing: 2.1px;
     text-transform: uppercase;
-    padding: 0px 0px 0px 16px;
+    padding: 17px 16px 15px 16px;
 }
 
 /* .input:focus {
     border: 2px solid var(--Purple);
   } */
-small {
-    color: red;
-    font-family: Poppins;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    position: absolute;
-    margin-top: 105px;
-}
-
-hr {
-    width: 632px;
-    margin: 0px;
+.line {
     margin-left: 56px;
     margin-top: 48px;
-    border: 1x solid #DBDBDB
+    width: 100%;
+    height: 1px;
+    background: #DBDBDB;
 }
 
 .button .line hr {
@@ -95,6 +85,11 @@ hr {
 
 .submit-btn:hover {
     background-color: black;
+}
+
+img {
+    width: 46px;
+    height: 44px;
 }
 
 .button img {
@@ -131,11 +126,17 @@ hr {
 @media (max-width: 768px) {
     .container {
         width: 368px;
+        border-radius: 24px 24px 88px 24px;
+        background: #FFF;
         align-items: center;
         justify-content: center;
     }
 
-    hr {
+    .content {
+        padding: 52px 0px 51px 0px;
+    }
+
+    .line {
         width: 256px;
         margin: 0px 0px;
     }
@@ -144,10 +145,18 @@ hr {
         padding: 52px 0px 64px 24px;
     }
 
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 96px;
+        height: 54px;
+        margin-bottom: 32px;
+    }
+
     .input-container input {
-        width: 78px;
-        height: 52px;
         font-size: 20px;
+        padding: 11px 8px 11px 16px
     }
 
     small {
@@ -169,7 +178,6 @@ hr {
     }
 
     .submit-btn {
-        text-align: end;
         margin-top: -32px;
     }
 

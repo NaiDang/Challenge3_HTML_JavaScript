@@ -15,44 +15,41 @@
 
 <body>
   <div class="container">
-    <div class="input-flex">
-      <div class="input-container">
-        <div>Day</div>
-        <input type="number" placeholder="DD" id="day">
-        <small class="error-day"></small>
+    <div class="content">
+      <div class="input-flex">
+        <div class="input-container">
+          <div>Day</div>
+          <input type="number" placeholder="DD" id="day">
+        </div>
+        <div class="input-container">
+          <div>Month</div>
+          <input type="number" placeholder="MM" id="month">
+        </div>
+        <div class="input-container">
+          <div>Year</div>
+          <input type="number" placeholder="YYYY" id="year">
+        </div>
       </div>
-      <div class="input-container">
-        <div>Month</div>
-        <input type="number" placeholder="MM" id="month">
-        <small class="error-month"></small>
+      <div class="button">
+        <div class="line">
+        </div>
+        <button class="submit-btn">
+          <img src="./Image/Button-icon.svg" alt="" onclick="calculateAge()">
+        </button>
       </div>
-      <div class="input-container">
-        <div>Year</div>
-        <input type="number" placeholder="YYYY" id="year">
-        <small class="error-year"></small>
-      </div>
-    </div>
-    <div class="button">
-      <div class="line">
-        <hr>
-      </div>
-      <button class="submit-btn">
-        <img src="./Image/Button-icon.svg" alt="">
-      </button>
-    </div>
-    <div class="output">
-      <div class="output-number">
-        <div class="output-year">--</div>
-        <div class="output-month">--</div>
-        <div class="output-day">--</div>
-      </div>
-      <div class="output-text">
-        <div>years</div>
-        <div>months</div>
-        <div>days</div>
+      <div class="output">
+        <div class="output-number">
+          <div id="output-year">--</div>
+          <div id="output-month">--</div>
+          <div id="output-day">--</div>
+        </div>
+        <div class="output-text">
+          <div>years</div>
+          <div>months</div>
+          <div>days</div>
+        </div>
       </div>
     </div>
-  </div>
   </div>
   <script src="./Script.js"></script>
 </body>
