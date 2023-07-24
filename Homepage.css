@@ -1,6 +1,7 @@
 body {
     background: #F0F0F0;
 }
+
 /* Desktop page */
 .container {
     max-width: 840px;
@@ -11,12 +12,14 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.input-flex{
+
+.input-flex {
     display: flex;
-    gap:16px ;
+    gap: 16px;
     padding: 56px 0px 0px 56px;
 }
-.input-container div{
+
+.input-container div {
     color: #716F6F;
     font-family: Poppins;
     font-size: 14px;
@@ -26,15 +29,17 @@ body {
     letter-spacing: 2.1px;
     text-transform: uppercase;
 }
-.input-container{
+
+.input-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .input-container input {
     padding: 0px;
-    width: 140px;
-    height: 70px;
+    width: 142px;
+    height: 68px;
     border-radius: 8px;
     border: 1px solid #DBDBDB;
     background: #FFF;
@@ -49,10 +54,11 @@ body {
     text-transform: uppercase;
     padding: 0px 0px 0px 16px;
 }
+
 /* .input:focus {
     border: 2px solid var(--Purple);
   } */
-  small {
+small {
     color: red;
     font-family: Poppins;
     font-size: 12px;
@@ -61,11 +67,8 @@ body {
     line-height: 20px;
     position: absolute;
     margin-top: 105px;
-  }
-/* input:focus {
-    border: 2px solid var(--Purple);
 }
-   */
+
 hr {
     width: 632px;
     margin: 0px;
@@ -73,9 +76,11 @@ hr {
     margin-top: 48px;
     border: 1x solid #DBDBDB
 }
+
 .button .line hr {
-        background-color: #DBDBDB;
+    background-color: #DBDBDB;
 }
+
 .button {
     display: flex;
     margin-bottom: -15px;
@@ -85,35 +90,33 @@ hr {
     border-radius: 9999px;
     background: #854DFF;
     flex-shrink: 0;
-    border: none; 
+    border: none;
 }
+
 .submit-btn:hover {
     background-color: black;
-  }
+}
+
 .button img {
-    width: 46px;
-    height: 44px;
-    padding: 26px 22px;
+    padding: 23px 19px;
 }
 
-.output{
+.output {
     padding: 0px 56px;
+    display: flex;
 }
 
-.output span {
+.output .output-number div {
     color: #854DFF;
     font-family: Poppins;
     font-size: 96px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 105.6px;
     margin-right: 19px;
-    
 }
- .increase-font-weight .output span {
-    font-weight: 700;
-  }
-.output div {
+
+.output .output-text div {
     color: #141414;
     font-family: Poppins;
     font-size: 96px;
@@ -121,44 +124,72 @@ hr {
     font-weight: 700;
     line-height: 105.6px;
 }
-    
+
 /* Close desktop page */
 
 /* Mobile page */
-@media (max-width: 768px) { 
-    .container{
+@media (max-width: 768px) {
+    .container {
         width: 368px;
-    }
-    hr{
-        width: 256px;
-    }
-    .input-flex{
-        padding: 52px 0px 0px 24px;
-    }
-    .input-container input{
-        width: 96px;
-        height: 54px;
-    }
-    .output{
-        padding: 56px 0px 0px 24px;
-    }
-    .output span{
-        font-size: 52px;
-    }
-    .sub-texts{
-        width: 100%;
-    }
-    .input-retangles{
-        width: 100%;
-    }
-    .button{
-        width: 100%;
-    }
-    .content{
-        width: 100%;
-    }
-    .months{
-        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
+    hr {
+        width: 256px;
+        margin: 0px 0px;
+    }
+
+    .input-flex {
+        padding: 52px 0px 64px 24px;
+    }
+
+    .input-container input {
+        width: 78px;
+        height: 52px;
+        font-size: 20px;
+    }
+
+    small {
+        font-size: 9px;
+        margin-top: 85px;
+    }
+
+    img {
+        width: 26px;
+        height: 25px;
+    }
+
+    .button img {
+        padding: 17px 13px;
+    }
+
+    .line {
+        margin-top: 0px;
+    }
+
+    .submit-btn {
+        text-align: end;
+        margin-top: -32px;
+    }
+
+    .output {
+        padding: 56px 0px 0px 24px;
+    }
+
+    .output .output-text div {
+        font-size: 52px;
+        line-height: 57px;
+    }
+
+    .output .output-number div {
+        font-size: 52px;
+        line-height: 57px;
+    }
+
+    .button {
+        width: 100%;
+        position: absolute;
+        margin-left: 24px;
+    }
 }

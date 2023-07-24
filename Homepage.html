@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Inter:wght@200;300;400;500;600;700;800&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Rasa:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Homepage.css">
-    <title>Home page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Inter:wght@200;300;400;500;600;700;800&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Rasa:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="Homepage.css">
+  <title>Home page</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="input-flex">
-            <div class="input-container">
-              <div>Day</div>
-              <input type="number" placeholder="DD" id="day">
-              <small class="error-day"></small>
-            </div>
-            <div class="input-container">
-              <div>Month</div>
-              <input type="number" placeholder="MM" id="month">
-              <small class="error-month"></small>
-            </div>
-            <div class="input-container">
-              <div>Year</div>
-              <input type="number" placeholder="YYYY"  id="year">
-              <small class="error-year"></small>
-            </div>
-          </div>      
-        <div class="button">
-            <div class="line"><hr></div>
-            <button class="submit-btn">
-                <img src="./Image/Button-icon.svg" alt="" >
-            </button>
-        </div> 
-        <div class="output">
-            <div><span class="output-year">--</span>years</div>
-            <div><span class="output-month">--</span>months</div>
-            <div><span class="output-day">--</span>days</div>
-          </div>
-        </div>
+  <div class="container">
+    <div class="input-flex">
+      <div class="input-container">
+        <div>Day</div>
+        <input type="number" placeholder="DD" id="day">
+        <small class="error-day"></small>
+      </div>
+      <div class="input-container">
+        <div>Month</div>
+        <input type="number" placeholder="MM" id="month">
+        <small class="error-month"></small>
+      </div>
+      <div class="input-container">
+        <div>Year</div>
+        <input type="number" placeholder="YYYY" id="year">
+        <small class="error-year"></small>
+      </div>
     </div>
-    <script src="./Script.js"></script>
+    <div class="button">
+      <div class="line">
+        <hr>
+      </div>
+      <button class="submit-btn">
+        <img src="./Image/Button-icon.svg" alt="">
+      </button>
+    </div>
+    <div class="output">
+      <div class="output-number">
+        <div class="output-year">--</div>
+        <div class="output-month">--</div>
+        <div class="output-day">--</div>
+      </div>
+      <div class="output-text">
+        <div>years</div>
+        <div>months</div>
+        <div>days</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="./Script.js"></script>
 </body>
+
 </html>
