@@ -1,18 +1,22 @@
 body {
     background: #F0F0F0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 
 /* Desktop page */
 .container {
-    max-width: 840px;
+    width: 840px;
     border-radius: 24px 24px 176px 24px;
     background: #FFF;
-    margin: 200px auto 20px auto;
+    margin: 0px auto;
 
 }
 
 .content {
-    padding: 56px 56px 70px;
+    padding: 56px 56px 70px 0px;
 }
 
 .input-flex {
@@ -56,8 +60,10 @@ body {
     padding: 17px 16px 15px 16px;
 }
 
-/* .input:focus {
-    border: 2px solid var(--Purple);
+/* .input-container input:focus {
+    border-radius: 8px;
+    border: 1px solid #854DFF;
+    background: #FFF;
   } */
 .line {
     margin-left: 56px;
@@ -142,7 +148,7 @@ img {
     }
 
     .input-flex {
-        padding: 52px 0px 64px 24px;
+        padding: 52px 24px 64px 24px;
     }
 
     .input-container {
@@ -156,7 +162,7 @@ img {
 
     .input-container input {
         font-size: 20px;
-        padding: 11px 8px 11px 16px
+        padding: 11px 0px 11px 16px
     }
 
     small {
